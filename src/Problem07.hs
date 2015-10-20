@@ -20,6 +20,8 @@
 --  *Main> flatten (List [])
 --  []
 
+module Problem07 where
+
 flatten :: [[a]] -> [a]
 flatten [lista] = lista
 flatten (head:tail) = head ++ flatten tail 

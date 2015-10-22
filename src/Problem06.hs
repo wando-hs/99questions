@@ -10,6 +10,8 @@
 --  *Main> isPalindrome [1,2,4,8,16,8,4,2,1]
 --  True
 
+module Problem06 where
+
 import Problem01 
 
 removeLast [x] = []

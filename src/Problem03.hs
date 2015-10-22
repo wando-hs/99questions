@@ -13,7 +13,7 @@
 --  Prelude> elementAt "haskell" 5
 --  'e'
 
-
+module Problem03(kth) where
 
 kth :: [a] -> Int -> a
 kth (x:xs) n

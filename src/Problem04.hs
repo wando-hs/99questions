@@ -8,6 +8,7 @@
 --  Prelude> myLength "Hello, world!"
 --  13
 
+module Problem04 where
 
 myLength [a] = 1
 myLength (x:xs) = 1 + myLength xs

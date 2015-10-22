@@ -13,4 +13,4 @@ module Problem01 (mylast) where
 
 mylast :: [a] -> a
 mylast [x] = x
-mylast (x:xs) = mylast xs
+mylast (_:xs) = mylast xs

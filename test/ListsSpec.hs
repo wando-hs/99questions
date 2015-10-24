@@ -9,6 +9,7 @@ import Problem06
 import Problem07
 import Problem08
 import Problem09
+import Problem10
 
 main :: IO ()
 main = hspec spec
@@ -31,7 +32,5 @@ spec = do
       compress "aaaabccaadeeee" `shouldBe` "abcade"
     it "Problem 9: Pack consecutive duplicates of list elements into sublists. If a list contains repeated elements they should be placed in separate sublists." $ do
       pack ['a', 'a', 'a', 'a', 'b', 'c', 'c', 'a', 'a', 'd', 'e', 'e', 'e', 'e'] `shouldBe` ["aaaa","b","cc","aa","d","eeee"]
-      
-
-      
-      
+    it "Problem 10: Run-length encoding of a list" $ do
+      encode "aaaabccaadeeee" `shouldBe` [(4,'a'),(1,'b'),(2,'c'),(2,'a'),(1,'d'),(4,'e')]

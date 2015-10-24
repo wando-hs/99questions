@@ -1,3 +1,5 @@
+module Problem11 where
+
 import Problem10 (encode,map')
 
 data Item a = Multiple Int a | Single a

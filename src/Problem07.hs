@@ -19,7 +19,7 @@
 --  [1,2,3,4,5]
 --  *Main> flatten (List [])
 --  []
-module Problem07 where
+module Problem07(flatten, NestedList) where
 
 flatten :: [[a]] -> [a]
 flatten [lista] = lista

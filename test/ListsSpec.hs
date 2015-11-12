@@ -27,7 +27,7 @@ spec = do
       isPalindrome [1,2,3] `shouldBe` False
       isPalindrome "madamimadam" `shouldBe` True
     it "Problem 7: Flatten a nested list structure." $ do
-      flatten [['a']] `shouldBe` ['a']
+     flatten (List [Elem 1, List [Elem 2, List [Elem 3, Elem 4], Elem 5]]) `shouldBe` [1,2,3,4,5]
     it "Problem 8: Eliminate consecutive duplicates of list elements." $ do
       compress "aaaabccaadeeee" `shouldBe` "abcade"
     it "Problem 9: Pack consecutive duplicates of list elements into sublists. If a list contains repeated elements they should be placed in separate sublists." $ do

@@ -3,7 +3,7 @@ module Problem11 where
 import Problem10 (encode,map')
 
 data Item a = Multiple Int a | Single a
-    deriving (Show)
+    deriving (Show, Eq)
 
 encode' :: Eq a => [a] -> [Item a]
 encode' xs = map' process $ encode xs

@@ -8,6 +8,5 @@ filter'1 func (x:xs) i = (filter'1 func [x] i) ++ (filter'1 func xs (i + 1))
 filter' :: (a -> Int -> Bool) -> [a] -> [a]
 filter' func xs = filter'1 func xs 1
 
---filter' func [] = []
---filter' func [x] = if func x then [x] else []
---filter' func (x:xs) = (filter func x) ++ (filter' func xs)
+dropEvery :: [a] -> Int -> [a]
+dropEvery xs nth = filter' (\x i -> (mod i nth) /= 0) xs

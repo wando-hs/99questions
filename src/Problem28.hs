@@ -1,8 +1,5 @@
 module Problem28(lsort, lfsort) where
 
-import Data.List(sortBy)
-import Data.Function(on)
-
 lsort :: [[a]] -> [[a]]
 lsort [] = []
 lsort (x:xs) = elements (<=) ++ [x] ++ elements (>)
